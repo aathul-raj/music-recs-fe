@@ -32,7 +32,7 @@ export default function Recs(){
     const fetchRecommendations = async () => {
     try {
         const items = [fieldText.field1, fieldText.field2, fieldText.field3];
-        const response = await axios.post('http://localhost:3000/recommend', { type, items });
+        const response = await axios.post('https://avid-appliance-production.up.railway.app/recommend', { type, items });
         const recommendationsArray = response.data[0].split(',');
         setRecommendations(recommendationsArray); // Assuming the API returns an array of recommendations
     } catch (error) {
