@@ -32,7 +32,7 @@ export default function Textfield({ label, charLimit, onTextChange  }){
           borderRadius: '15px',
           border: '5px solid #6200B3',
           padding: '10px',
-          width: isMobile ? '21rem' : '25rem'
+          width: isMobile ? '22rem' : '25rem'
         }}>
           <label className='text-label'>{label}</label>
           <input
@@ -44,7 +44,7 @@ export default function Textfield({ label, charLimit, onTextChange  }){
               outline: 'none',
               flex: '1',
               fontWeight: 'bold',
-              fontSize: '1.5rem'
+              fontSize: '1.2rem'
             }}
           />
         </div>
