@@ -44,7 +44,7 @@ export default function Textfield({ label, charLimit, onTextChange  }){
               outline: 'none',
               flex: '1',
               fontWeight: 'bold',
-              fontSize: '1.7rem'
+              fontSize: '1.5rem'
             }}
           />
         </div>

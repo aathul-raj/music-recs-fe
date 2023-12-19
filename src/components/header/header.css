@@ -30,4 +30,10 @@ span.green-text{
    nav.header{
     margin: 0 1.5rem;
    }
+   h1.logo{
+    font-size: 2rem;
+   }
+   h2.subheading{
+    font-size: 1rem;
+   }
 }

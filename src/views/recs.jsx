@@ -62,7 +62,7 @@ export default function Recs(){
                     </div>
                     </>, 
                     <>
-                    <h1>enter three (3) <span className="green-text">artists</span> you like:</h1>
+                    <h1 className="rec-text">enter three (3) <span className="green-text">artists</span> you like:</h1>
                     <div className="textfield-container">
                         <Textfield label="1" charLimit={charLimit} onTextChange={handleTextChange('field1')}/>
                         <Textfield label="2" charLimit={charLimit} onTextChange={handleTextChange('field2')}/>
@@ -77,7 +77,7 @@ export default function Recs(){
                     }}>get recs</button>
                     </>,
                     <>
-                    <h1>enter three (3) <span className="green-text">albums</span> you like:</h1>
+                    <h1 className="rec-text">enter three (3) <span className="green-text">albums</span> you like:</h1>
                     <div className="textfield-container">
                         <Textfield label="1" charLimit={charLimit} onTextChange={handleTextChange('field1')}/>
                         <Textfield label="2" charLimit={charLimit} onTextChange={handleTextChange('field2')}/>
