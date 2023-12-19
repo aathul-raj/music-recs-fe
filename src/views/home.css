@@ -1,0 +1,115 @@
+
+.landing-container{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing-text {
+    text-align: center;
+    white-space: pre-line;
+    margin: 0; /* Remove any default margin */
+}
+
+.purple-btn {
+    background-color: #6200B3;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+}
+
+.purple-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1px 5px #0B6E4F;
+}
+
+.album-art-container{
+    position: absolute;
+}
+
+.a1 {
+    transform: translate(20px, -300px) rotate(-5deg);
+    animation-delay: 0s;
+}
+
+.a2 {
+    transform: translate(150px, -150px) rotate(-15deg);
+    animation-delay: 3s;
+}
+
+.a3 {
+    transform: translate(100px, -500px) rotate(-25deg);
+    animation-delay: 5s;
+}
+
+.a4{
+    transform: translate(370px, -70px) rotate(10deg);
+    animation-delay: 8s;
+}
+
+.a5{
+    transform: translate(570px, 50px) rotate(3deg);
+    animation-delay: 12s;
+}
+
+.a6{
+    transform: translate(770px, -50px) rotate(10deg);
+    animation-delay: 15s;
+}
+
+.a7{
+    transform: translate(970px, 0px) rotate(3deg);
+    animation-delay: 17s;
+}
+
+.a8{
+    transform: translate(1170px, -100px) rotate(25deg);
+    animation-delay: 20s;
+}
+
+.a9{
+    transform: translate(1070px, -300px) rotate(-15deg);
+    animation-delay: 21s;
+}
+
+.a10{
+    transform: translate(1270px, -400px) rotate(20deg);
+    animation-delay: 25s;
+}
+
+.landing-img{
+    border-radius: 25px;
+    align-self: center;
+    animation: rotate 60s linear infinite;
+    transition: box-shadow 0.3s ease;
+}
+
+.landing-img:hover {
+    box-shadow: 0 0 1px 5px #6200B3; /* White glow, adjust color and intensity as needed */
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @media only screen and (max-width: 600px){
+    .landing-img{
+        display: none;
+    }
+
+    .landing-text{
+        margin: 0 1rem;
+    }
+  }

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+
+nav.header{
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+h1.logo{
+    background: linear-gradient(to right, #6200B3, #3B0086);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+}
+
+h2.subheading{
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+span.green-text{
+    color: #0B6E4F;
+}
+
+@media only screen and (max-width: 600px){
+   nav.header{
+    margin: 0 1.5rem;
+   }
+}

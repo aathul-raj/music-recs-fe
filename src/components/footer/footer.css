@@ -1,0 +1,49 @@
+footer.footer {
+    z-index: 2;
+    background-color: #0B6E4F;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.scroll-container {
+    display: flex;
+    width: 200%; /* Make the container double the width of the footer */
+    animation: scroll 80s linear infinite; /* Adjust time as needed */
+}
+
+.footer-content {
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-between; /* Spread content evenly */
+    flex: 0 0 20%; /* Each .footer-content takes up half the width of .scroll-container */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-80%); /* Start from the left */
+    }
+    100% {
+        transform: translateX(80%); /* Move to the right */
+    }
+}
+
+footer.footer img.footer-icon {
+    align-self: center;
+    max-width: 1.3rem;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 600px){
+   .footer-content{
+    flex: 0 0 50%;
+   }
+  }
